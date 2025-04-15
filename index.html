@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SP Celulares - Venda de Celulares</title>
+  <style>
+    :root {
+      --primary-color: #0B5ED7;
+      --secondary-color: #F8F9FA;
+      --accent-color: #25D366;
+      --text-color: #212529;
+      --bg-color: #f0f2f5;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+    }
+
+    header {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    nav {
+      margin: 20px;
+      text-align: center;
+    }
+
+    nav a {
+      color: var(--primary-color);
+      margin: 0 15px;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    nav a:hover {
+      color: #0a4f99;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .product {
+      background-color: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: transform 0.3s;
+    }
+
+    .product:hover {
+      transform: translateY(-5px);
+    }
+
+    .product img {
+      width: 100%;
+      display: block;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .product-content {
+      padding: 15px;
+      text-align: center;
+    }
+
+    .product-content h3 {
+      margin: 10px 0;
+      font-size: 22px;
+    }
+
+    .price {
+      font-size: 18px;
+      color: green;
+      margin: 10px 0;
+    }
+
+    .btn {
+      background-color: var(--accent-color);
+      color: white;
+      padding: 10px 15px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 10px;
+      transition: background-color 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #1da851;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      background-color: #fff;
+      border-top: 1px solid #ddd;
+      margin-top: 40px;
+    }
+
+    footer a {
+      color: var(--primary-color);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>SP Celulares</h1>
+  <p>Os melhores smartphones com os melhores preços</p>
+</header>
+
+<nav>
+  <a href="#">Início</a>
+  <a href="#">Produtos</a>
+  <a href="#">Sobre nós</a>
+  <a href="#">Contato</a>
+</nav>
+
+<div class="container">
+  <h2 style="text-align:center;">Escolha o seu celular!</h2>
+  <div class="product-grid">
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1631049305934-3e89f2a10a74?auto=format&fit=crop&w=800&q=80" alt="iPhone 13">
+      <div class="product-content">
+        <h3>iPhone 13</h3>
+        <p class="price">R$ 5.999</p>
+        <a class="btn" href="https://wa.me/5547996726439" target="_blank">Comprar no WhatsApp</a>
+      </div>
+    </div>
+
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1611162617213-b1415fbd3bbf?auto=format&fit=crop&w=800&q=80" alt="Samsung Galaxy S21">
+      <div class="product-content">
+        <h3>Samsung Galaxy S21</h3>
+        <p class="price">R$ 4.799</p>
+        <a class="btn" href="https://wa.me/5547996726439" target="_blank">Comprar no WhatsApp</a>
+      </div>
+    </div>
+
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1610951831134-7686deaa82aa?auto=format&fit=crop&w=800&q=80" alt="Xiaomi Redmi Note 10">
+      <div class="product-content">
+        <h3>Xiaomi Redmi Note 10</h3>
+        <p class="price">R$ 2.199</p>
+        <a class="btn" href="https://wa.me/5547996726439" target="_blank">Comprar no WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>Pagamento via <strong>Pix</strong> ou à vista. Atendimento exclusivo via WhatsApp.</p>
+  <p>Siga no Instagram: <a href="https://instagram.com/sp.celulares_" target="_blank">@sp.celulares_</a></p>
+</footer>
+
+</body>
+</html>
